@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Lottery Miners | Mine your own luck</title>
+  <title>LotteryMiners | Mine your own luck</title>
   <!-- Google Fonts & simple reset -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
   <style>
@@ -188,7 +188,6 @@
       box-shadow: 0 8px 24px rgba(251, 191, 36, 0.5);
     }
 
-    /* Hero section */
     .hero {
       padding: 0px 0 60px;
       text-align: center;
@@ -389,7 +388,6 @@
       color: #0B0F1A;
     }
 
-    /* Special product card for NerdMiner V2 with photo placeholder and new description */
     .product-showcase-card {
       background: rgba(15, 23, 42, 0.7);
       backdrop-filter: blur(8px);
@@ -398,6 +396,7 @@
       border: 1px solid rgba(251, 191, 36, 0.2);
       transition: all 0.25s ease;
       margin: 40px 0 60px;
+      text-align: center;
     }
     .product-showcase-card:hover {
       border-color: #FBBF24;
@@ -409,6 +408,7 @@
       flex-wrap: wrap;
       gap: 40px;
       align-items: flex-start;
+      justify-content: center;
     }
     .product-photo-area {
       flex: 1.2;
@@ -440,6 +440,30 @@
     }
     .product-info-area {
       flex: 2;
+      text-align: left;
+    }
+    /* On mobile, center the product info area text to match other cards */
+    @media (max-width: 780px) {
+      .product-info-area {
+        text-align: center;
+      }
+      .product-title {
+        justify-content: center;
+      }
+      .product-description {
+        text-align: center;
+        border-left: none;
+        padding-left: 0;
+      }
+      .product-bullets {
+        text-align: left;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .product-price-row {
+        justify-content: center;
+      }
     }
     .product-title {
       display: flex;
@@ -492,6 +516,13 @@
       font-size: 1rem;
       color: #CBD5E1;
     }
+    /* On mobile, center bullet items but keep icon left alignment */
+    @media (max-width: 780px) {
+      .product-bullets li {
+        justify-content: flex-start;
+        text-align: left;
+      }
+    }
     .bullet-icon {
       background: rgba(251, 191, 36, 0.2);
       border-radius: 50%;
@@ -524,13 +555,19 @@
     @media (max-width: 780px) {
       .product-layout {
         flex-direction: column;
+        align-items: center;
       }
       .product-title {
         font-size: 1.7rem;
       }
+      .product-photo-area {
+        width: 100%;
+      }
+      .product-price-row {
+        justify-content: center;
+      }
     }
 
-    /* lottery mining explanation */
     .how-it-works {
       background: radial-gradient(circle at 20% 30%, rgba(251, 191, 36, 0.05), transparent);
       border-radius: 48px;
@@ -570,7 +607,6 @@
       margin: 0 auto 20px;
     }
 
-    /* News story cards */
     .news-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -656,7 +692,6 @@
       border-color: #FBBF24;
     }
 
-    /* CTA */
     .cta {
       background: linear-gradient(145deg, #0F172A, #0B1120);
       border-radius: 56px;
@@ -677,7 +712,6 @@
       font-size: 1.1rem;
     }
 
-    /* Live ticker styles */
     .live-ticker {
       margin-top: 16px;
       background: rgba(0, 0, 0, 0.4);
@@ -770,6 +804,42 @@
       0% { transform: scale(1); background: rgba(251, 191, 36, 0.3);}
       100% { transform: scale(1); background: transparent; }
     }
+
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 32px;
+      margin: 40px 0 60px;
+    }
+    .benefit-card {
+      background: rgba(15, 23, 42, 0.7);
+      backdrop-filter: blur(8px);
+      border-radius: 32px;
+      padding: 32px 24px;
+      border: 1px solid rgba(251, 191, 36, 0.2);
+      transition: all 0.25s ease;
+      text-align: center;
+    }
+    .benefit-card:hover {
+      border-color: #FBBF24;
+      transform: translateY(-6px);
+      box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.5);
+    }
+    .benefit-icon {
+      font-size: 3.2rem;
+      margin-bottom: 20px;
+    }
+    .benefit-card h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: #FFFFFF;
+    }
+    .benefit-card p {
+      color: #CBD5E1;
+      line-height: 1.5;
+      font-size: 0.95rem;
+    }
   </style>
 </head>
 <body>
@@ -786,7 +856,6 @@
     </div>
   </div>
 
-  <!-- hero -->
   <div class="hero">
     <div>
       <img class="badge-img" src="lotteryminers.png" alt="Lottery Miners Badge"/>
@@ -835,7 +904,7 @@
         </ul>
         <div class="product-price-row">
           <div class="product-price">$50</div>
-          <a href="https://lotteryminers.bigcartel.com/" target="_blank" rel="noopener noreferrer" class="btn-card" style="width: auto; padding: 10px 32px;">Get NerdMiner V2 →</a>
+          <a href="https://lotteryminers.bigcartel.com/" target="_blank" rel="noopener noreferrer" class="btn-card" style="width: auto; padding: 10px 32px;">Shop NerdMiner V2 →</a>
         </div>
         <div style="margin-top: 16px; font-size:0.8rem; color:#94A3B8;"><span class="btc-coin" style="width:1em;height:1em;"><span class="btc-symbol" style="font-size:0.65em;">₿</span></span> 40-100 KH/s · silent USB · solo mining</div>
       </div>
@@ -849,11 +918,11 @@
       <div class="price">$30</div>
       <div class="hashrate"><span class="btc-coin" style="width:1.2em;height:1.2em;"><span class="btc-symbol" style="font-size:0.7em;">₿</span></span> 40-100 KH/s | .35-1.25W</div>
       <ul class="feature-list">
-        <li><span class="coin-bullet"><span class="btc-symbol-micro">₿</span></span> NerdMiner V2 - without display</li>
+        <li><span class="coin-bullet"><span class="btc-symbol-micro">₿</span></span> NerdMiner V2 — no integrated display</li>
         <li><span class="coin-bullet"><span class="btc-symbol-micro">₿</span></span> Compact companion, increase your odds</li>
-        <li><span class="coin-bullet"><span class="btc-symbol-micro">₿</span></span> Workers display on dashboard</li>
+        <li><span class="coin-bullet"><span class="btc-symbol-micro">₿</span></span> Online dashboard showing real-time stats</li>
       </ul>
-      <a href="https://lotteryminers.bigcartel.com/" target="_blank" rel="noopener noreferrer" class="btn-card"><span class="btc-coin" style="width:1.2em;height:1.2em;"><span class="btc-symbol" style="font-size:0.7em;">₿</span></span>Buy now — increase your chances</a>
+      <a href="https://lotteryminers.bigcartel.com/" target="_blank" rel="noopener noreferrer" class="btn-card"><span class="btc-coin" style="width:1.2em;height:1.2em;"><span class="btc-symbol" style="font-size:0.7em;">₿</span></span>Shop now — increase your chances</a>
     </div>
     <div class="device-card">
       <div class="device-icon">🏆</div>
@@ -863,9 +932,9 @@
       <ul class="feature-list">
         <li><span class="coin-bullet"><span class="btc-symbol-micro">₿</span></span> 6x more hashrate, still whisper-quiet</li>
         <li><span class="coin-bullet"><span class="btc-symbol-micro">₿</span></span> Power station included</li>
-        <li><span class="coin-bullet"><span class="btc-symbol-micro">₿</span></span> Pool-less solo mining, full reward potential</li>
+        <li><span class="coin-bullet"><span class="btc-symbol-micro">₿</span></span> Online dashboard showing real-time stats</li>
       </ul>
-      <a href="https://lotteryminers.bigcartel.com/" target="_blank" rel="noopener noreferrer" class="btn-card"><span class="btc-coin" style="width:1.2em;height:1.2em;"><span class="btc-symbol" style="font-size:0.7em;">₿</span></span> Buy now — highest odds</a>
+      <a href="https://lotteryminers.bigcartel.com/" target="_blank" rel="noopener noreferrer" class="btn-card"><span class="btc-coin" style="width:1.2em;height:1.2em;"><span class="btc-symbol" style="font-size:0.7em;">₿</span></span> Shop now — highest odds</a>
     </div>
   </div>
 
@@ -882,23 +951,23 @@
     <div style="text-align: center; margin-top: 32px;"><span style="background: #1E293B; padding: 6px 18px; border-radius: 60px; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 6px;"><span class="btc-coin" style="width:1.2em;height:1.2em;"><span class="btc-symbol" style="font-size:0.7em;">₿</span></span> Solo mining — 100% of reward belongs to you. No pool fees.</span></div>
   </div>
 
-  <!-- why lottery players love it -->
+  <!-- why lottery players love it - now centered with consistent styling -->
   <div class="section-title">✨ Why traditional lottery players switch</div>
-  <div class="card-grid" style="margin-top: 0;">
-    <div class="device-card" style="text-align:left;">
-      <div class="device-icon">📈</div>
+  <div class="benefits-grid">
+    <div class="benefit-card">
+      <div class="benefit-icon">📈</div>
       <h3>Perpetual entry</h3>
-      <p style="color:#CBD5E1;">Unlike weekly draws, your device mines non-stop. No missed draws, always in the game.</p>
+      <p>Unlike weekly draws, your device mines non-stop. No missed draws, always in the game.</p>
     </div>
-    <div class="device-card" style="text-align:left;">
-      <div class="device-icon">💰</div>
+    <div class="benefit-card">
+      <div class="benefit-icon">💰</div>
       <h3>Real value asset</h3>
-      <p style="color:#CBD5E1;">Even if you never hit a block, you own physical hardware that retains resale value.</p>
+      <p>Even if you never hit a block, you own physical hardware that retains resale value.</p>
     </div>
-    <div class="device-card" style="text-align:left;">
-      <div class="device-icon">🔓</div>
+    <div class="benefit-card">
+      <div class="benefit-icon">🔓</div>
       <h3>Full transparency</h3>
-      <p style="color:#CBD5E1;">Verify every hash on chain — no hidden operators. Your luck, your reward.</p>
+      <p>Verify every hash on chain — no hidden operators. Your luck, your reward.</p>
     </div>
   </div>
 
@@ -951,7 +1020,7 @@
       </div>
     </div>
     <br/>
-    <a href="https://lotteryminers.bigcartel.com/" target="_blank" rel="noopener noreferrer" class="btn-primary" id="ctaScroll"><span class="btc-coin"><span class="btc-symbol">₿</span></span> Buy your lottery miner now</a>
+    <a href="https://lotteryminers.bigcartel.com/" target="_blank" rel="noopener noreferrer" class="btn-primary" id="ctaScroll"><span class="btc-coin"><span class="btc-symbol">₿</span></span> Mine your own luck now!</a>
     <div style="margin-top: 28px; font-size:0.8rem;">🔒 Free shipping • Plug-and-Play Setup • Online Support</div>
   </div>
 
