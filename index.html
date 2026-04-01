@@ -36,7 +36,6 @@
       --border-glow: rgba(251, 191, 36, 0.25);
     }
 
-    /* gold coin icon style — solid gold circle with transparent bitcoin symbol cutout effect */
     .btc-coin {
       display: inline-flex;
       align-items: center;
@@ -430,28 +429,30 @@
       margin: 0 auto 20px;
     }
 
-    /* News story cards */
+    /* News story cards - FIXED hover effect to match device cards */
     .news-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 28px;
+      gap: 32px;
       margin: 40px 0 60px;
     }
 
     .news-card {
-      background: #111827;
-      border-radius: 28px;
+      background: rgba(15, 23, 42, 0.7);
+      backdrop-filter: blur(8px);
+      border-radius: 32px;
       padding: 28px;
-      border-left: 4px solid #FBBF24;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      border: 1px solid rgba(251, 191, 36, 0.2);
+      transition: all 0.25s ease;
       display: flex;
       flex-direction: column;
       height: 100%;
     }
 
     .news-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+      border-color: #FBBF24;
+      transform: translateY(-6px);
+      box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.5);
     }
 
     .news-date {
@@ -461,6 +462,18 @@
       letter-spacing: 1px;
       margin-bottom: 12px;
       font-weight: 600;
+    }
+
+    .reward-highlight {
+      display: inline-block;
+      background: rgba(251, 191, 36, 0.2);
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #FBBF24;
+      margin-bottom: 12px;
+      width: fit-content;
     }
 
     .news-title {
@@ -483,8 +496,8 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background: rgba(251, 191, 36, 0.15);
-      border: 1px solid rgba(251, 191, 36, 0.4);
+      background: rgba(251, 191, 36, 0.1);
+      border: 1px solid #FBBF24;
       border-radius: 40px;
       padding: 8px 18px;
       color: #FBBF24;
@@ -500,17 +513,6 @@
       background: #FBBF24;
       color: #0B0F1A;
       border-color: #FBBF24;
-    }
-
-    .reward-highlight {
-      display: inline-block;
-      background: rgba(251, 191, 36, 0.2);
-      padding: 4px 10px;
-      border-radius: 20px;
-      font-size: 0.8rem;
-      font-weight: 600;
-      color: #FBBF24;
-      margin-bottom: 12px;
     }
 
     /* CTA */
@@ -614,6 +616,9 @@
       .ticker-item {
         width: 100%;
         justify-content: center;
+      }
+      .news-grid {
+        gap: 24px;
       }
     }
 
@@ -732,7 +737,7 @@
     </div>
   </div>
 
-  <!-- REAL NEWS STORIES SECTION -->
+  <!-- REAL NEWS STORIES SECTION - FIXED HOVER EFFECT -->
   <div id="news" style="scroll-margin-top: 80px;"></div>
   <div class="section-title">🏆 Real solo mining wins — recent headlines</div>
   <div class="section-sub">Actual news stories of individual miners beating the odds and claiming full Bitcoin block rewards</div>
@@ -766,6 +771,7 @@
     <p style="font-size:1.1rem; margin-bottom: 10px;">Low power, silent, real odds. No subscription, no hidden fees.</p>
     <p style="color:#FBBF24; font-weight:500;">🎯 Every hash is a chance to win 3.125 BTC (~$200,000+)</p>
     
+    <!-- LIVE BITCOIN PRICE & REWARD TICKER -->
     <div id="liveRewardTicker" class="live-ticker">
       <div class="ticker-item">
         <span class="ticker-label">Current BTC =</span>
