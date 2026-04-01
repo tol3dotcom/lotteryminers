@@ -1,4 +1,4 @@
-***Configuring the NerdMiner V2***
+#Configuring the NerdMiner V2
 
 ### Step 1: Connect to the NerdMiner AP
 1.  Plug your NerdMiner V2 into a USB power source.
