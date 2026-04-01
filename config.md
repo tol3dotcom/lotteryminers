@@ -1,6 +1,4 @@
-Configuring the NerdMiner V2
-
-Now that you have a permanent Bitcoin address, you will insert it into the NerdMiner configuration.
+***Configuring the NerdMiner V2***
 
 ### Step 1: Connect to the NerdMiner AP
 1.  Plug your NerdMiner V2 into a USB power source.
