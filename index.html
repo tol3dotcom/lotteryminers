@@ -195,13 +195,19 @@
       text-align: center;
     }
 
-    .badge {
+    /* BADGE IMAGE SCALING: desktop 50%, mobile 80% */
+    .badge-img {
+      max-width: 50%;
+      height: auto;
       display: inline-block;
-      padding: 6px 18px;
-      font-size: 0.85rem;
-      font-weight: 500;
-      color: #FBBF24;
-      margin-bottom: 30px;
+      transition: all 0.2s ease;
+	  padding-bottom: 20px;
+    }
+    
+    @media (max-width: 768px) {
+      .badge-img {
+        max-width: 80%;
+      }
     }
 
     .hero h1 {
@@ -376,6 +382,7 @@
       align-items: center;
       justify-content: center;
       gap: 8px;
+      text-decoration: none;
     }
 
     .btn-card:hover {
@@ -423,7 +430,7 @@
       margin: 0 auto 20px;
     }
 
-    /* News story cards - replacing testimonials */
+    /* News story cards */
     .news-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -572,21 +579,18 @@
       <div class="logo-text">LOTTERY<span>MINERS</span></div>
     </div>
     <div class="nav-links">
-      <!--<a href="#devices">Miners</a>
-      <a href="#howitworks">How it works</a>
-      <a href="#news">Wins</a>-->
-      <a href="#" id="buyNowNav" class="btn-outline"><span class="btc-coin" style="width:1.2em;height:1.2em;"><span class="btc-symbol" style="font-size:0.7em;">₿</span></span> Buy device →</a>
+      <a href="https://lotteryminers.bigcartel.com/" target="_blank" rel="noopener noreferrer" class="btn-outline"><span class="btc-coin" style="width:1.2em;height:1.2em;"><span class="btc-symbol" style="font-size:0.7em;">₿</span></span> Shop devices →</a>
     </div>
   </div>
 
   <!-- hero -->
   <div class="hero">
     <div>
-		<img class="badge" width="70%" src="lotteryminers.png"/>
-	</div>
+      <img class="badge-img" src="lotteryminers.png" alt="Lottery Miners Badge"/>
+    </div>
     <h1>Turn electricity into<br><span>lottery tickets</span><br>that mine Bitcoin</h1>
     <p>Low-powered solo mining devices that give you a real shot at a full 3.125 BTC block reward. Play the Bitcoin lottery every second — no pools, no sharing.</p>
-    <a href="#devices" class="btn-primary"><span class="btc-coin"><span class="btc-symbol">₿</span></span> Explore lottery miners</a>
+    <a href="https://lotteryminers.bigcartel.com/" target="_blank" rel="noopener noreferrer" class="btn-primary"><span class="btc-coin"><span class="btc-symbol">₿</span></span> Explore lottery miners</a>
     <div class="hero-stats">
       <div class="stat"><div class="stat-number">1 in 8M</div><div class="stat-label">daily odds* per device</div></div>
       <div class="stat"><div class="stat-number">3.125 BTC</div><div class="stat-label">full block reward</div></div>
@@ -610,7 +614,7 @@
         <li><span class="coin-bullet"><span class="btc-symbol-micro">₿</span></span> Real-time dashboard & lottery insights</li>
         <li><span class="coin-bullet"><span class="btc-symbol-micro">₿</span></span> Pool-less solo mining, full reward potential</li>
       </ul>
-      <button class="btn-card buy-btn" data-device="NERDMINER V2" data-price="349"><span class="btc-coin" style="width:1.2em;height:1.2em;"><span class="btc-symbol" style="font-size:0.7em;">₿</span></span>Buy now — start mining lottery</button>
+      <a href="https://lotteryminers.bigcartel.com/" target="_blank" rel="noopener noreferrer" class="btn-card"><span class="btc-coin" style="width:1.2em;height:1.2em;"><span class="btc-symbol" style="font-size:0.7em;">₿</span></span>Buy now — start mining lottery</a>
     </div>
     <div class="device-card">
       <div class="device-icon">🎰</div>
@@ -622,7 +626,7 @@
         <li><span class="coin-bullet"><span class="btc-symbol-micro">₿</span></span> Compact companion, increase your odds</li>
         <li><span class="coin-bullet"><span class="btc-symbol-micro">₿</span></span> Workers display on NerdMiner dashboard</li>
       </ul>
-      <button class="btn-card buy-btn" data-device="LOTTO NANO" data-price="149"><span class="btc-coin" style="width:1.2em;height:1.2em;"><span class="btc-symbol" style="font-size:0.7em;">₿</span></span>Buy now — increase your chances</button>
+      <a href="https://lotteryminers.bigcartel.com/" target="_blank" rel="noopener noreferrer" class="btn-card"><span class="btc-coin" style="width:1.2em;height:1.2em;"><span class="btc-symbol" style="font-size:0.7em;">₿</span></span>Buy now — increase your chances</a>
     </div>
     <div class="device-card">
       <div class="device-icon">🏆</div>
@@ -634,7 +638,7 @@
         <li><span class="coin-bullet"><span class="btc-symbol-micro">₿</span></span> Power station included</li>
         <li><span class="coin-bullet"><span class="btc-symbol-micro">₿</span></span> Pool-less solo mining, full reward potential</li>
       </ul>
-      <button class="btn-card buy-btn" data-device="LOTTO TOWER" data-price="699"><span class="btc-coin" style="width:1.2em;height:1.2em;"><span class="btc-symbol" style="font-size:0.7em;">₿</span></span> Buy now — highest odds</button>
+      <a href="https://lotteryminers.bigcartel.com/" target="_blank" rel="noopener noreferrer" class="btn-card"><span class="btc-coin" style="width:1.2em;height:1.2em;"><span class="btc-symbol" style="font-size:0.7em;">₿</span></span> Buy now — highest odds</a>
     </div>
   </div>
 
@@ -671,13 +675,12 @@
     </div>
   </div>
 
-  <!-- REAL NEWS STORIES SECTION - replacing testimonials with verified solo mining wins -->
+  <!-- REAL NEWS STORIES SECTION -->
   <div id="news" style="scroll-margin-top: 80px;"></div>
   <div class="section-title">🏆 Real solo mining wins — recent headlines</div>
   <div class="section-sub">Actual news stories of individual miners beating the odds and claiming full Bitcoin block rewards</div>
 
   <div class="news-grid">
-    <!-- News Story 1: $75 rental turns into $200,000 (Feb 2026) -->
     <div class="news-card">
       <div class="news-date">FEBRUARY 2026</div>
       <div class="reward-highlight">💰 $75 → $200,000+ jackpot</div>
@@ -685,8 +688,6 @@
       <div class="news-summary">A solo miner rented 1 petahash per second of computing power for just $75 via CKPool and successfully validated block 938,092, earning the full 3.125 BTC reward worth over $200,000 — a 2,600x return on investment.</div>
       <a href="https://www.coindesk.com/markets/2026/02/25/solo-bitcoin-miner-turns-usd75-of-rented-hashrate-into-a-usd200-000-block-reward" class="news-link" target="_blank" rel="noopener noreferrer">📰 Read full story →</a>
     </div>
-
-    <!-- News Story 2: Back-to-back $300K wins (Jan 2026) -->
     <div class="news-card">
       <div class="news-date">JANUARY 2026</div>
       <div class="reward-highlight">🏆 Two wins in one week — $300K each</div>
@@ -694,8 +695,6 @@
       <div class="news-summary">Two solo miners each earned roughly $300,000 worth of BTC within days of each other. One miner landed 3.157 BTC (≈$304,000) on Thursday, preceded by another solo miner who earned $295,000 on Tuesday — both receiving full payouts without sharing.</div>
       <a href="https://finance.yahoo.com/news/solo-bitcoin-miners-beat-1-133625327.html" class="news-link" target="_blank" rel="noopener noreferrer">📰 Read full story →</a>
     </div>
-
-    <!-- News Story 3: 22 solo blocks in 12 months -->
     <div class="news-card">
       <div class="news-date">JANUARY 2026</div>
       <div class="reward-highlight">📊 22 solo-mined blocks • 1 win every 15.6 days</div>
@@ -705,74 +704,18 @@
     </div>
   </div>
 
-  <!-- call to action + lottery guarantee -->
   <div class="cta">
     <h2>Start your Bitcoin lottery journey today</h2>
     <p style="font-size:1.1rem; margin-bottom: 10px;">Low power, silent, real odds. No subscription, no hidden fees.</p>
     <p style="color:#FBBF24; font-weight:500;">🎯 Every hash is a chance to win 3.125 BTC (~$200,000+)</p>
-    <a href="#devices" class="btn-primary" id="ctaScroll"><span class="btc-coin"><span class="btc-symbol">₿</span></span> Claim your lottery miner now</a>
-    <div style="margin-top: 28px; font-size:0.8rem;">🔒 Free worldwide shipping • 30-day returns • Solo mining dashboard included</div>
+    <a href="https://lotteryminers.bigcartel.com/" target="_blank" rel="noopener noreferrer" class="btn-primary" id="ctaScroll"><span class="btc-coin"><span class="btc-symbol">₿</span></span> Buy your lottery miner now</a>
+    <div style="margin-top: 28px; font-size:0.8rem;">🔒 Free shipping</div>
   </div>
 
   <footer>
-    <p>© 2025 LotteryMiner — Turning low-power mining into the world's fairest lottery. <span class="btc-coin" style="width:1.1em;height:1.1em;"><span class="btc-symbol" style="font-size:0.65em;">₿</span></span> Odds vary based on total network hashrate. <br> Bitcoin lottery mining is a probabilistic activity. Past wins do not guarantee future results. Device sales only.</p>
+    <p>LotteryMiners — Turning low-power mining into the world's fairest lottery. <span class="btc-coin" style="width:1.1em;height:1.1em;"><span class="btc-symbol" style="font-size:0.65em;">₿</span></span> Odds vary based on total network hashrate. <br> Bitcoin lottery mining is a probabilistic activity. Past wins do not guarantee future results. Device sales only.</p>
   </footer>
 </div>
 
-<script>
-  // buy buttons interaction -> simulate "add to cart" alert + flash effect
-  const buyBtns = document.querySelectorAll('.buy-btn');
-  const ctaScrollBtn = document.getElementById('ctaScroll');
-  const navBuy = document.getElementById('buyNowNav');
-
-  function flashElement(el) {
-    if(!el) return;
-    el.classList.add('flash');
-    setTimeout(() => {
-      el.classList.remove('flash');
-    }, 400);
-  }
-
-  function handleBuy(deviceName, price) {
-    const msg = `🎟️ ADDED TO CART: ${deviceName} — $${price}\n\nProceed to secure checkout?\n(limited stock for lottery miners)`;
-    if (confirm(msg)) {
-      alert(`✨ Thank you! You're one step closer to hitting the Bitcoin jackpot.\n\nA checkout link will be sent to your email (demo experience). In production, this would redirect to payment.`);
-    } else {
-      alert("No worries — your lottery miner is waiting. Claim it anytime!");
-    }
-    flashElement(document.querySelector('.hero h1'));
-  }
-
-  buyBtns.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      const device = btn.getAttribute('data-device');
-      const price = btn.getAttribute('data-price');
-      handleBuy(device, price);
-    });
-  });
-
-  function smoothScroll(targetId) {
-    const el = document.querySelector(targetId);
-    if(el) {
-      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  }
-
-  if(ctaScrollBtn) {
-    ctaScrollBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      smoothScroll('#devices');
-    });
-  }
-
-  if(navBuy) {
-    navBuy.addEventListener('click', (e) => {
-      e.preventDefault();
-      smoothScroll('#devices');
-    });
-  }
-
-  console.log("₿ Lottery Miner — real solo mining success stories from recent news headlines.");
-</script>
 </body>
 </html>
