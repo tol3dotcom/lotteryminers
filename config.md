@@ -14,8 +14,8 @@
 4.  **Enter Wi-Fi Password:** Input the password for your home network.
 5.  **Enter BTC Address:**
     - Find the field labeled **"Your BTC address"** .
-    - **Important:** Delete the placeholder text (e.g., `yourBtcAddress`) entirely before pasting .
-    - Paste the Bitcoin address you copied from your wallet.
+    - **Important:** Delete the placeholder text (e.g., `yourBtcAddress`) entirely before pasting address from your Bitcoin wallet.
+    - Create a new request that never expires in your Bitcoin wallet, copy that address and paste.
 6.  **Time Zone (Optional):** Adjust the time zone offset (e.g., `2` for Central European Summer Time) if desired .
 7.  Click **Save**.
 
