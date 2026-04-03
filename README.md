@@ -1,4 +1,4 @@
-![LotteryMiners](lotteryminers.png?width=300)
+![LotteryMiners](lotteryminers.png?width=200)
 
 # Getting Started
 
