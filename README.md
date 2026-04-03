@@ -3,7 +3,7 @@
 # Getting Started
 
 ## 1. Bitcoin Wallet Setup 
->>You may skip this step if you already have a Bitcoin Wallet
+>You may skip this step if you already have a Bitcoin Wallet
 
 [Electrum Wallet Instructions](electrum.md)
 
