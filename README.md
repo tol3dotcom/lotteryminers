@@ -9,6 +9,6 @@
 
 
 ## 2. NerdMiner V2 Setup : Your Bitcoin Lottery Ticket
-
+>NerdMiner V2, Nano Miner, and Nano Tower devices
 [NerdMiner V2 Setup Guide](setup.md)
 
