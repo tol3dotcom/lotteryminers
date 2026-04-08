@@ -2,13 +2,13 @@
 
 # Getting Started
 
-## 1. Bitcoin Wallet Setup 
->You may skip this step if you already have a Bitcoin Wallet
+## 1. Create a Bitcoin Wallet 
+>You may skip this step if you already have a Bitcoin Wallet. 
 
 [Electrum Wallet Instructions](electrum.md)
+>Electrum Wallet not required, you may create Bitcoin wallet of your choosing.
 
-
-## 2. NerdMiner V2 Setup : Your Bitcoin Lottery Ticket
+## 2. NerdMiner V2 Setup: Your Bitcoin Lottery Ticket
 >NerdMiner V2, NanoMiner, and NanoMiner Tower devices
 
 [NerdMiner V2 Setup Guide](setup.md)
