@@ -16,7 +16,8 @@ The NerdMiner V2 is a small device that allows you to try **Solo Bitcoin Mining*
 
 ## 3. Step 1: Power On & Connect
 1.  **Power the Device:** Connect the USB cable to the NerdMiner and plug it into a power source (computer, USB wall plug, etc.). The screen should light up.
-2.  **Check the Screen:** If the device is new or has been reset, the screen will display a QR code and the credentials for its own internal WiFi network .
+> NanoMiner devices will light up a red LED to indicate power, and a blue LED when Wifi is ready.
+3.  **Check the Screen:** If the device is new or has been reset, the screen will display a QR code and the credentials for its own internal WiFi network .
 
 ---
 
@@ -38,7 +39,7 @@ The NerdMiner creates its own WiFi hotspot so you can tell it how to connect to 
 4.  **Save & Restart:**
     - Click **"Save"** .
     - The device will restart. It will now attempt to connect to your home WiFi and start mining .
-
+> Nano devices a blue LED will blink indicating mining activity.
 ---
 
 ## 5. Step 3: Reading the Display
