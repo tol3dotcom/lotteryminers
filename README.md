@@ -2,8 +2,7 @@
 
 # Getting Started
 
-## 1. Create a Bitcoin Wallet 
->You may skip this step if you already have a Bitcoin Wallet. 
+## 1. Create a Bitcoin Wallet >You may skip this step if you already have a Bitcoin Wallet. 
 
 [Electrum Wallet Instructions](electrum.md)
 >Electrum Wallet not required, you may create Bitcoin wallet of your choosing.
