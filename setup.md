@@ -39,7 +39,7 @@ The NerdMiner creates its own WiFi hotspot so you can tell it how to connect to 
 4.  **Save & Restart:**
     - Click **"Save"** .
     - The device will restart. It will now attempt to connect to your home WiFi and start mining .
-> Nano devices a blue LED will blink indicating mining activity.
+> NanoMiner devices will blink a blue LED indicating WiFi mining activity.
 ---
 
 ## 5. Step 3: Reading the Display
@@ -52,6 +52,7 @@ Once the device restarts and connects to the internet, the screen will display l
 - **Pool:** The status of your connection to the mining pool.
 
 ---
+> NanoMiner users may skip to Step 7 - Monitoring Your Progress
 
 ## 6. Step 4: Device Controls & Navigation
 The device has two or three buttons on the side (usually near the USB port) .
